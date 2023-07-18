@@ -1,6 +1,9 @@
 {
 .appVersion = "3108";
 .formatVersion = 3;
+DisplayStrings = (
+"रू  /ra_mu-deva  "
+);
 axes = (
 {
 name = Weight;
@@ -1109,7 +1112,8 @@ code = "script dev2;
 sub ha-deva rVocalicMatra-deva by ha_mvr-deva;
 sub ha-deva uuMatra-deva by ha_muu-deva;
 sub ha-deva uMatra-deva by ha_mu-deva;
-
+sub ra-deva uuMatra-deva by ra_muu-deva;
+sub ra-deva uMatra-deva by ra_mu-deva;
 ";
 tag = blws;
 },
