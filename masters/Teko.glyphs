@@ -1,9 +1,6 @@
 {
 .appVersion = "3108";
 .formatVersion = 3;
-DisplayStrings = (
-"/ng_ga-deva"
-);
 axes = (
 {
 name = Weight;
@@ -45,6 +42,22 @@ value = pyrs;
 {
 name = "Use Typo Metrics";
 value = 1;
+},
+{
+name = "Axis Mappings";
+value = {
+wght = {
+300 = 69;
+400 = 90;
+500 = 115;
+600 = 141;
+700 = 172;
+};
+};
+},
+{
+name = "Variable Font Origin";
+value = "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5";
 }
 );
 date = "2023-07-18 08:03:03 +0000";
@@ -124961,14 +124974,6 @@ instanceInterpolations = {
 name = Light;
 properties = (
 {
-key = postscriptFontName;
-value = "Teko-Light";
-},
-{
-key = postscriptFullName;
-value = "Teko Light";
-},
-{
 key = styleMapFamilyName;
 value = Teko;
 }
@@ -124994,6 +124999,7 @@ instanceInterpolations = {
 "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.5534;
 };
 name = Medium;
+weightClass = 500;
 },
 {
 axesValues = (
@@ -125004,6 +125010,7 @@ instanceInterpolations = {
 "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.30097;
 };
 name = SemiBold;
+weightClass = 600;
 },
 {
 axesValues = (
@@ -125013,6 +125020,7 @@ instanceInterpolations = {
 "13BA2761-E32F-4173-A027-E047921EE288" = 1;
 };
 name = Bold;
+weightClass = 700;
 }
 );
 metrics = (
