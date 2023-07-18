@@ -1,9 +1,6 @@
 {
 .appVersion = "3108";
 .formatVersion = 3;
-DisplayStrings = (
-"/eMatra_anusvara-deva/eMatra_anusvara-deva/eMatra_anusvara-deva"
-);
 axes = (
 {
 name = Weight;
@@ -2681,7 +2678,6 @@ sub iMatra-deva' h_va-deva by iMatra-deva.05;
 tag = pres;
 },
 {
-automatic = 1;
 code = "script dev2;
 lookup Abvs1_devanagari {
 	sub aiMatra-deva reph-deva anusvara-deva by aiMatra_reph_anusvara-deva;
@@ -2706,9 +2702,13 @@ lookup Abvs1_devanagari {
 	sub reph-deva anusvara-deva by reph_anusvara-deva;
 } Abvs1_devanagari;
 
+lookup trad {
+sub @DevaIMatras @DevaFullforms anusvara-deva' by anusvara.ami-deva;
+} trad;
+
 script deva;
 lookup Abvs1_devanagari;
-";
+lookup trad;";
 tag = abvs;
 },
 {
@@ -2761,7 +2761,7 @@ tag = vatu;
 fontMaster = (
 {
 axesValues = (
-89
+69
 );
 customParameters = (
 {
@@ -122641,6 +122641,54 @@ width = 0;
 );
 },
 {
+glyphname = "anusvara.ami-deva";
+lastChange = "2023-07-18 13:35:13 +0000";
+layers = (
+{
+anchors = (
+{
+name = _abvm.bindu;
+pos = (-57,622);
+}
+);
+layerId = "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5";
+shapes = (
+{
+closed = 1;
+nodes = (
+(-30,677,l),
+(43,677,l),
+(43,763,l),
+(-30,763,l)
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _abvm.bindu;
+pos = (-59,642);
+}
+);
+layerId = "13BA2761-E32F-4173-A027-E047921EE288";
+shapes = (
+{
+closed = 1;
+nodes = (
+(-31,678,l),
+(91,678,l),
+(91,807,l),
+(-31,807,l)
+);
+}
+);
+width = 0;
+}
+);
+},
+{
 color = 4;
 glyphname = "abbreviationsign-deva";
 lastChange = "2023-07-18 08:15:15 +0000";
@@ -125580,54 +125628,6 @@ width = 976;
 );
 },
 {
-glyphname = "anusvara.ami-deva";
-lastChange = "2023-07-18 08:18:04 +0000";
-layers = (
-{
-anchors = (
-{
-name = _abvm.i;
-pos = (-1,657);
-}
-);
-layerId = "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5";
-shapes = (
-{
-closed = 1;
-nodes = (
-(20,657,l),
-(93,657,l),
-(93,743,l),
-(20,743,l)
-);
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _abvm.i;
-pos = (0,658);
-}
-);
-layerId = "13BA2761-E32F-4173-A027-E047921EE288";
-shapes = (
-{
-closed = 1;
-nodes = (
-(30,658,l),
-(152,658,l),
-(152,787,l),
-(30,787,l)
-);
-}
-);
-width = 0;
-}
-);
-},
-{
 glyphname = "reph.ami-deva";
 lastChange = "2023-07-18 08:15:15 +0000";
 layers = (
@@ -125755,7 +125755,7 @@ width = 0;
 instances = (
 {
 axesValues = (
-89
+69
 );
 customParameters = (
 {
@@ -125788,8 +125788,8 @@ axesValues = (
 90
 );
 instanceInterpolations = {
-"13BA2761-E32F-4173-A027-E047921EE288" = 0.01205;
-"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.98795;
+"13BA2761-E32F-4173-A027-E047921EE288" = 0.20388;
+"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.79612;
 };
 name = Regular;
 },
@@ -125798,8 +125798,8 @@ axesValues = (
 115
 );
 instanceInterpolations = {
-"13BA2761-E32F-4173-A027-E047921EE288" = 0.31325;
-"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.68675;
+"13BA2761-E32F-4173-A027-E047921EE288" = 0.4466;
+"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.5534;
 };
 name = Medium;
 },
@@ -125808,8 +125808,8 @@ axesValues = (
 141
 );
 instanceInterpolations = {
-"13BA2761-E32F-4173-A027-E047921EE288" = 0.62651;
-"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.37349;
+"13BA2761-E32F-4173-A027-E047921EE288" = 0.69903;
+"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.30097;
 };
 name = SemiBold;
 },
