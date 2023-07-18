@@ -1,9 +1,6 @@
 {
 .appVersion = "3108";
 .formatVersion = 3;
-DisplayStrings = (
-"रू  /ra_mu-deva  "
-);
 axes = (
 {
 name = Weight;
@@ -580,11 +577,12 @@ lookup Akhn_devanagari {
 	sub ja-deva halant-deva nya-deva by j_nya-deva;
 } Akhn_devanagari;
 lookup eyelash_ra {
-sub ra-deva' halant-deva' zerowidthjoiner by eyelash-deva;
+sub ra-deva' halant-deva' uni200D by eyelash-deva;
 } eyelash_ra;
 script deva;
 lookup Akhn_devanagari;
-lookup eyelash_ra;";
+lookup eyelash_ra;
+";
 tag = akhn;
 },
 {
@@ -1553,8 +1551,8 @@ lookup eyelash_pres {
   sub eyelash-deva ha-deva by eyelash_ha-deva;
 
   # Else:
-  sub eyelash-deva zerowidthjoiner ya-deva by eyelash_ya-deva;
-  sub eyelash-deva zerowidthjoiner ha-deva by eyelash_ha-deva;
+  sub eyelash-deva uni200D ya-deva by eyelash_ya-deva;
+  sub eyelash-deva uni200D ha-deva by eyelash_ha-deva;
 } eyelash_pres;
 ";
 tag = pres;
@@ -109620,6 +109618,31 @@ width = 0;
 }
 );
 unicode = 0;
+},
+{
+glyphname = uni200D;
+lastChange = "2023-07-18 14:24:09 +0000";
+layers = (
+{
+layerId = "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5";
+shapes = (
+{
+ref = zerowidthjoiner;
+}
+);
+width = 0;
+},
+{
+layerId = "13BA2761-E32F-4173-A027-E047921EE288";
+shapes = (
+{
+ref = zerowidthjoiner;
+}
+);
+width = 0;
+}
+);
+unicode = 8205;
 },
 {
 glyphname = zerowidthjoiner;
