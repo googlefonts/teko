@@ -1,9 +1,6 @@
 {
 .appVersion = "3108";
 .formatVersion = 3;
-DisplayStrings = (
-"/rakar-deva"
-);
 axes = (
 {
 name = Weight;
@@ -2208,7 +2205,6 @@ lookup cjct_devanagari {
 tag = cjct;
 },
 {
-automatic = 1;
 code = "script dev2;
 	sub b-deva rakar-deva by b_r-deva;
 	sub bh-deva rakar-deva by bh_r-deva;
@@ -2243,6 +2239,12 @@ code = "script dev2;
 	sub tth-deva rakar-deva by tth_r-deva;
 	sub v-deva rakar-deva by v_r-deva;
 	sub y-deva rakar-deva by y_r-deva;
+
+
+sub ha-deva rVocalicMatra-deva by ha_mvr-deva;
+sub ha-deva uuMatra-deva by ha_muu-deva;
+sub ha-deva uMatra-deva by ha_mu-deva;
+
 ";
 tag = blws;
 },
@@ -43640,7 +43642,7 @@ layerId = "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5";
 shapes = (
 {
 pos = (681,0);
-ref = "aiMatra-deva";
+ref = "mai-deva";
 },
 {
 ref = "a-deva";
@@ -43657,7 +43659,7 @@ layerId = "13BA2761-E32F-4173-A027-E047921EE288";
 shapes = (
 {
 pos = (985,0);
-ref = "aiMatra-deva";
+ref = "mai-deva";
 },
 {
 ref = "a-deva";
@@ -44365,7 +44367,7 @@ ref = "aaMatra-deva";
 },
 {
 pos = (181,0);
-ref = "aiMatra-deva";
+ref = "mai-deva";
 }
 );
 width = 180;
@@ -44378,7 +44380,7 @@ ref = "aaMatra-deva";
 },
 {
 pos = (255,0);
-ref = "aiMatra-deva";
+ref = "mai-deva";
 }
 );
 width = 250;
@@ -44398,7 +44400,7 @@ ref = "aaMatra-deva";
 },
 {
 pos = (184,0);
-ref = "aiMatra-deva";
+ref = "mai-deva";
 },
 {
 pos = (262,-70);
@@ -44415,7 +44417,7 @@ ref = "aaMatra-deva";
 },
 {
 pos = (256,0);
-ref = "aiMatra-deva";
+ref = "mai-deva";
 },
 {
 pos = (411,-54);
@@ -121775,8 +121777,8 @@ width = 0;
 );
 },
 {
-glyphname = "aiMatra-deva";
-lastChange = "2023-07-18 08:32:54 +0000";
+glyphname = "aiMatra_anusvara-deva";
+lastChange = "2023-07-18 11:31:08 +0000";
 layers = (
 {
 anchors = (
@@ -121792,26 +121794,11 @@ pos = (-57,622);
 layerId = "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5";
 shapes = (
 {
-closed = 1;
-nodes = (
-(-206,681,l),
-(-151,629,o),
-(-124,612,o),
-(-124,612,c),
-(-58,612,l),
-(-105,813,l),
-(-179,813,l),
-(-157,761,ls),
-(-132,703,o),
-(-117,661,o),
-(-96,622,c),
-(-100,622,l),
-(-125,664,o),
-(-154,703,o),
-(-213,767,cs),
-(-255,813,l),
-(-346,813,l)
-);
+ref = "mai-deva";
+},
+{
+pos = (78,-70);
+ref = "anusvara-deva";
 }
 );
 width = 0;
@@ -121830,55 +121817,7 @@ pos = (-45,642);
 layerId = "13BA2761-E32F-4173-A027-E047921EE288";
 shapes = (
 {
-closed = 1;
-nodes = (
-(-356,745,ls),
-(-301,699,o),
-(-269,674,o),
-(-212,639,c),
-(-46,639,l),
-(-60,843,l),
-(-214,843,l),
-(-188,780,ls),
-(-167,730,o),
-(-155,700,o),
-(-130,656,c),
-(-135,656,l),
-(-165,702,o),
-(-190,735,o),
-(-230,787,cs),
-(-273,843,l),
-(-473,843,l)
-);
-}
-);
-width = 0;
-}
-);
-unicode = 2376;
-},
-{
-glyphname = "aiMatra_anusvara-deva";
-lastChange = "2023-07-18 08:33:08 +0000";
-layers = (
-{
-layerId = "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5";
-shapes = (
-{
-ref = "aiMatra-deva";
-},
-{
-pos = (78,-70);
-ref = "anusvara-deva";
-}
-);
-width = 0;
-},
-{
-layerId = "13BA2761-E32F-4173-A027-E047921EE288";
-shapes = (
-{
-ref = "aiMatra-deva";
+ref = "mai-deva";
 },
 {
 pos = (155,-54);
@@ -123111,6 +123050,88 @@ ref = "nukta-deva";
 }
 );
 width = 1309;
+}
+);
+},
+{
+glyphname = "mai-deva";
+lastChange = "2023-07-18 11:30:39 +0000";
+layers = (
+{
+anchors = (
+{
+name = _abvm.e;
+pos = (-57,632);
+},
+{
+name = _topright;
+pos = (-57,622);
+}
+);
+layerId = "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5";
+shapes = (
+{
+closed = 1;
+nodes = (
+(-206,681,l),
+(-151,629,o),
+(-124,612,o),
+(-124,612,c),
+(-58,612,l),
+(-105,813,l),
+(-179,813,l),
+(-157,761,ls),
+(-132,703,o),
+(-117,661,o),
+(-96,622,c),
+(-100,622,l),
+(-125,664,o),
+(-154,703,o),
+(-213,767,cs),
+(-255,813,l),
+(-346,813,l)
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _abvm.e;
+pos = (-47,652);
+},
+{
+name = _topright;
+pos = (-45,642);
+}
+);
+layerId = "13BA2761-E32F-4173-A027-E047921EE288";
+shapes = (
+{
+closed = 1;
+nodes = (
+(-356,745,ls),
+(-301,699,o),
+(-269,674,o),
+(-212,639,c),
+(-46,639,l),
+(-60,843,l),
+(-214,843,l),
+(-188,780,ls),
+(-167,730,o),
+(-155,700,o),
+(-130,656,c),
+(-135,656,l),
+(-165,702,o),
+(-190,735,o),
+(-230,787,cs),
+(-273,843,l),
+(-473,843,l)
+);
+}
+);
+width = 0;
 }
 );
 },
