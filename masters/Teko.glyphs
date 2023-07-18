@@ -1620,6 +1620,7 @@ feature cjct;
 feature blws;
 feature pres;
 feature abvs;
+feature vatu;
 ";
 tag = aalt;
 },
@@ -1704,7 +1705,6 @@ lookup NuktComp;
 tag = nukt;
 },
 {
-automatic = 1;
 code = "lookupflag 0;
 script dev2;
 lookup Akhn_devanagari {
@@ -1713,9 +1713,12 @@ lookup Akhn_devanagari {
 	sub ja-deva halant-deva nya-deva halant-deva by j_ny-deva;
 	sub ja-deva halant-deva nya-deva by j_nya-deva;
 } Akhn_devanagari;
+lookup eyelash_ra {
+sub ra-deva' halant-deva' zerowidthjoiner by eyelash-deva;
+} eyelash_ra;
 script deva;
 lookup Akhn_devanagari;
-";
+lookup eyelash_ra;";
 tag = akhn;
 },
 {
@@ -1743,7 +1746,6 @@ lookup rakar;
 tag = rkrf;
 },
 {
-automatic = 1;
 code = "script deva;
 sub ra-deva halant-deva by rakar-deva;
 ";
@@ -2674,7 +2676,20 @@ sub iMatra-deva' h_ya-deva by iMatra-deva.10;
 sub iMatra-deva' h_ra-deva by iMatra-deva.03;
 sub iMatra-deva' h_la-deva by iMatra-deva.06;
 sub iMatra-deva' h_va-deva by iMatra-deva.05;
-} matras;";
+} matras;
+
+lookup eyelash_pres {
+  # EYELASH
+
+  # If ZWJ has been filtered out (Core Text):
+  sub eyelash-deva ya-deva by eyelash_ya-deva;
+  sub eyelash-deva ha-deva by eyelash_ha-deva;
+
+  # Else:
+  sub eyelash-deva zerowidthjoiner ya-deva by eyelash_ya-deva;
+  sub eyelash-deva zerowidthjoiner ha-deva by eyelash_ha-deva;
+} eyelash_pres;
+";
 tag = pres;
 },
 {
