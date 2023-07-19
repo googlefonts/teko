@@ -1624,7 +1624,7 @@ lookup Abvs1_devanagari {
 	sub auMatra-deva reph-deva anusvara-deva by auMatra_reph_anusvara-deva;
 	sub eMatra-deva reph-deva anusvara-deva by eMatra_reph_anusvara-deva;
 	sub iiMatra-deva reph-deva anusvara-deva by iiMatra_reph_anusvara-deva;
-	sub iiMatra-deva reph-deva anusvara-deva by iiMatra_reph_anusvara-deva.02;
+	sub iiMatra-deva.02 reph-deva anusvara-deva by iiMatra_reph_anusvara-deva.02;
 	sub oMatra-deva reph-deva anusvara-deva by oMatra_reph_anusvara-deva;
 	sub aiMatra-deva anusvara-deva by aiMatra_anusvara-deva;
 	sub aiMatra-deva reph-deva by aiMatra_reph-deva;
@@ -1633,9 +1633,9 @@ lookup Abvs1_devanagari {
 	sub eMatra-deva anusvara-deva by eMatra_anusvara-deva;
 	sub eMatra-deva reph-deva by eMatra_reph-deva;
 	sub iiMatra-deva anusvara-deva by iiMatra_anusvara-deva;
-	sub iiMatra-deva anusvara-deva by iiMatra_anusvara-deva.02;
+	sub iiMatra-deva.02 anusvara-deva by iiMatra_anusvara-deva.02;
 	sub iiMatra-deva reph-deva by iiMatra_reph-deva;
-	sub iiMatra-deva reph-deva by iiMatra_reph-deva.02;
+	sub iiMatra-deva.02 reph-deva by iiMatra_reph-deva.02;
 	sub ii-deva anusvara-deva by ii_anusvara-deva;
 	sub oMatra-deva anusvara-deva by oMatra_anusvara-deva;
 	sub oMatra-deva reph-deva by oMatra_reph-deva;
@@ -1700,6 +1700,43 @@ sub f-deva rakar-deva by f_ra-deva;
 } vatu;
 ";
 tag = vatu;
+},
+{
+code = "script deva;
+script dev2;
+lookup post_base {
+sub ka-deva iiMatra-deva' by iiMatra-deva.02;
+sub pha-deva iiMatra-deva' by iiMatra-deva.02;
+sub qa-deva iiMatra-deva' by iiMatra-deva.02;
+sub fa-deva iiMatra-deva' by iiMatra-deva.02;
+sub k_ka-deva iiMatra-deva' by iiMatra-deva.02;
+sub k_ta-deva iiMatra-deva' by iiMatra-deva.02;
+sub k_pha-deva iiMatra-deva' by iiMatra-deva.02;
+sub k_ra-deva iiMatra-deva' by iiMatra-deva.02;
+sub j_ka-deva iiMatra-deva' by iiMatra-deva.02;
+sub t_ka-deva iiMatra-deva' by iiMatra-deva.02;
+sub t_pha-deva iiMatra-deva' by iiMatra-deva.02;
+sub n_ka-deva iiMatra-deva' by iiMatra-deva.02;
+sub n_pha-deva iiMatra-deva' by iiMatra-deva.02;
+sub p_pha-deva iiMatra-deva' by iiMatra-deva.02;
+sub ph_pha-deva iiMatra-deva' by iiMatra-deva.02;
+sub ph_ra-deva iiMatra-deva' by iiMatra-deva.02;
+sub l_ka-deva iiMatra-deva' by iiMatra-deva.02;
+sub l_pha-deva iiMatra-deva' by iiMatra-deva.02;
+sub sh_ka-deva iiMatra-deva' by iiMatra-deva.02;
+sub sh_fa-deva iiMatra-deva' by iiMatra-deva.02;
+sub ss_ka-deva iiMatra-deva' by iiMatra-deva.02;
+sub ss_pha-deva iiMatra-deva' by iiMatra-deva.02;
+sub s_ka-deva iiMatra-deva' by iiMatra-deva.02;
+sub s_pha-deva iiMatra-deva' by iiMatra-deva.02;
+sub q_pha-deva iiMatra-deva' by iiMatra-deva.02;
+sub q_ra-deva iiMatra-deva' by iiMatra-deva.02;
+sub q_qa-deva iiMatra-deva' by iiMatra-deva.02;
+sub q_fa-deva iiMatra-deva' by iiMatra-deva.02;
+sub f_ra-deva iiMatra-deva' by iiMatra-deva.02;
+sub f_fa-deva iiMatra-deva' by iiMatra-deva.02;
+} post_base;";
+tag = psts;
 }
 );
 fontMaster = (
@@ -127823,13 +127860,13 @@ width = 0;
 },
 {
 glyphname = "anusvara-deva.01";
-lastChange = "2023-07-19 14:37:52 +0000";
+lastChange = "2023-07-19 16:26:58 +0000";
 layers = (
 {
 anchors = (
 {
-name = _abvm.bindu;
-pos = (-57,622);
+name = _abvm.i;
+pos = (-57,677);
 }
 );
 layerId = "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5";
@@ -127849,8 +127886,8 @@ width = 0;
 {
 anchors = (
 {
-name = _abvm.bindu;
-pos = (-59,642);
+name = _abvm.i;
+pos = (-59,678);
 }
 );
 layerId = "13BA2761-E32F-4173-A027-E047921EE288";
