@@ -44,18 +44,6 @@ name = "Use Typo Metrics";
 value = 1;
 },
 {
-name = "Axis Mappings";
-value = {
-wght = {
-300 = 69;
-400 = 90.5;
-500 = 114;
-600 = 141;
-700 = 172;
-};
-};
-},
-{
 name = "Variable Font Origin";
 value = "26F47EE3-04F7-4A34-AF6F-5DD15DA624B5";
 }
@@ -129829,32 +129817,32 @@ weightClass = 300;
 },
 {
 axesValues = (
-90.5
+90.7
 );
 instanceInterpolations = {
-"13BA2761-E32F-4173-A027-E047921EE288" = 0.20874;
-"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.79126;
+"13BA2761-E32F-4173-A027-E047921EE288" = 0.21068;
+"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.78932;
 };
 name = Regular;
 },
 {
 axesValues = (
-114
+114.3
 );
 instanceInterpolations = {
-"13BA2761-E32F-4173-A027-E047921EE288" = 0.43689;
-"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.56311;
+"13BA2761-E32F-4173-A027-E047921EE288" = 0.43981;
+"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.56019;
 };
 name = Medium;
 weightClass = 500;
 },
 {
 axesValues = (
-141
+141.2
 );
 instanceInterpolations = {
-"13BA2761-E32F-4173-A027-E047921EE288" = 0.69903;
-"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.30097;
+"13BA2761-E32F-4173-A027-E047921EE288" = 0.70097;
+"26F47EE3-04F7-4A34-AF6F-5DD15DA624B5" = 0.29903;
 };
 name = SemiBold;
 weightClass = 600;
