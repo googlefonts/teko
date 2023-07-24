@@ -1,6 +1,9 @@
 {
 .appVersion = "3108";
 .formatVersion = 3;
+DisplayStrings = (
+"ग़"
+);
 axes = (
 {
 name = Weight;
@@ -732,6 +735,7 @@ sub ch-deva rakar-deva ya-deva by ch_r_ya-deva;
 	sub p-deva rakar-deva by p_ra-deva;
 	sub ph-deva rakar-deva by ph_ra-deva;
 	sub q-deva rakar-deva by q_ra-deva;
+	sub qa-deva rakar-deva by q_ra-deva;
 	sub s-deva rakar-deva by s_ra-deva;
 	sub sh-deva rakar-deva by sh_ra-deva;
 	sub ss-deva rakar-deva by ss_ra-deva;
@@ -1727,10 +1731,15 @@ sub ssa-deva rakar-deva by ss_ra-deva;
 sub sa-deva rakar-deva by s_ra-deva;
 sub ha-deva rakar-deva by h_ra-deva;
 sub khh-deva rakar-deva by khh_ra-deva;
+sub khha-deva rakar-deva by khh_ra-deva;
 sub f-deva rakar-deva by f_ra-deva;
+sub fa-deva rakar-deva by f_ra-deva;
 sub ghh-deva rakar-deva by ghh_ra-deva;
+sub ghha-deva rakar-deva by ghh_ra-deva;
 sub z-deva rakar-deva by z_ra-deva;
+sub za-deva rakar-deva by z_ra-deva;
 sub f-deva rakar-deva by f_ra-deva;
+sub fa-deva rakar-deva by f_ra-deva;
 } vatu;
 ";
 tag = vatu;
