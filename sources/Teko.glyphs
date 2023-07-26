@@ -130204,6 +130204,7 @@ axesValues = (
 instanceInterpolations = {
 "13BA2761-E32F-4173-A027-E047921EE288" = 1;
 };
+isBold = 1;
 name = Bold;
 weightClass = 700;
 }
